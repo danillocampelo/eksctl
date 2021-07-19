@@ -1,4 +1,3 @@
-# A simple example of ClusterConfig object:
 ---
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
@@ -11,6 +10,19 @@ nodeGroups:
   - name: zabbixng-1
     instanceType: t3a.large
     desiredCapacity: 1
+    # minSize: 1
+    # maxSize: 4
+    # volumeSize: 100
+    # volumeType: gp2
+    # ami: ami-05ecac759c81e0b0c
+    # amiFamily: AmazonLinux2
+    # forces the use of IMDSv2 tokens
+    # disableIMDSv1: true
+    # labels:
+      # nodegroup-type: frontend-workloads
+    # iam:
+      # withAddonPolicies:
+        # autoScaler: true
 
 cloudWatch:
     clusterLogging:
