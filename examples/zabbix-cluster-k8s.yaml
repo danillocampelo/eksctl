@@ -8,10 +8,10 @@ metadata:
 
 nodeGroups:
   - name: zabbixng-1
-    instanceType: t3a.large
+    instanceType: t3a.medium
     desiredCapacity: 1
-    # minSize: 1
-    # maxSize: 4
+    minSize: 1
+    maxSize: 4
     # volumeSize: 100
     # volumeType: gp2
     # ami: ami-05ecac759c81e0b0c
